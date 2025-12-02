@@ -155,6 +155,6 @@ describe('/api', () => {
     const response = await testSetup.getHTTPClient().post('/order', orderToAdd);
 
     //Assert
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(8000); // 200
   });
 });

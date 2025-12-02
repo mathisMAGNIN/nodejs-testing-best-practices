@@ -13,3 +13,4 @@
 3. Run `nvm use`
 4. Run the tests `Run t`
    
+test

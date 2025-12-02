@@ -9,6 +9,8 @@ on:
       - '*'
   pull_request:
     branches: [master]
+  paths:
+    - 'example-application/**'
 
 jobs:
   build:
@@ -46,7 +48,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - run: npm i
-      - run: npm run test:nestjs
+      - run: npm test
   
   nestjs:
     runs-on: ubuntu-latest

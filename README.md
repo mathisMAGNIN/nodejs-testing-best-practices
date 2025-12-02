@@ -1,5 +1,5 @@
 ![Header](./graphics/testing-best-practices-banner.png 'Node.js Testing Best Practices')
- 
+
 <br/>
 
 ## A detailed guide to modern testing with Node.js

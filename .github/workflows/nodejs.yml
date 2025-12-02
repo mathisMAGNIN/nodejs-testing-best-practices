@@ -33,7 +33,7 @@ jobs:
       - run: npm i
 
   test:
-    needs: build
+    needs: nestjs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -53,7 +53,7 @@ jobs:
       - run: npm test
   
   nestjs:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
